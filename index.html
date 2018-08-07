@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Agile Testing</title>
+    <meta name="description" content="Introduction to Agile Testing">
+    <meta name="author" content="Alan Barr">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="//code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="//code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <script src="fsharp.formatting/styles/tips.js" type="text/javascript"></script>
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/fsreveal.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script language="javascript" type="text/javascript">
+        function init()
+        {
+            websocket = new WebSocket("ws://"+window.location.host+"/websocket");
+            websocket.onmessage = function(evt) { location.reload(); };
+        }
+        window.addEventListener("load", init, false);
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section >
+<section data-background="#61E8E1">
+<h1>Agile Testing Days 2018</h1>
+</section>
+<section data-background="#EAF2E3">
+<h2>Lean Testing</h2>
+<ul>
+<li>What is lean?</li>
+<li>An adaption of the lean manufacturing principles applied to software development</li>
+<li>An approach to cotinual improvement</li>
+<li>Instead of adding to our processes Lean is focused on what is left to take away</li>
+</ul>
+</section>
+<section data-background="#F25757">
+<h2>Eliminate Waste</h2>
+<ul>
+<li>What is the bottleneck?</li>
+<li>What is the most valuable thing to do next?</li>
+<li>What can we try changing in the next two weeks?</li>
+</ul>
+</section>
+<section data-background="#F2E863">
+<h2>Lean Testing</h2>
+<ul>
+<li>Look at the development flow</li>
+<li>Look for waste</li>
+<li>Identify what is adding to customer value</li>
+<li>How can we manage mitigating our risk in each process?</li>
+</ul>
+</section>
+</section>
+<section >
+<section data-background="#F2CD60">
+<h2>Storytelling in Testing</h2>
+<ul>
+<li>Stories are a natural form of communication</li>
+<li>Follow a common structure</li>
+<li>Evoke emotion and a feeling of empathy</li>
+</ul>
+</section>
+<section data-background="#EAF2E3">
+<img src=images/bugreport.png>
+</section>
+<section data-background="#61E8E1">
+<img src=images/mindmap.png>
+</section>
+<section data-background="#F25757">
+<img src=images\structure.png width=65% style=margin-top:-20px>
+</section>
+<section data-background="#F2E863">
+<img src=images\components.png width=60% style=margin-top:-30px>
+</section>
+<section data-background="#F2CD60">
+<img src=images\success.png width=65% style=margin-top:-20px>
+</section>
+<section data-background="#EAF2E3">
+<h2>Image - Effect - Meaning</h2>
+<ul>
+<li>
+Image
+<ul>
+<li>What do you see? What happened?</li>
+</ul>
+</li>
+<li>
+Effect
+<ul>
+<li>How did it affect you?</li>
+</ul>
+</li>
+<li>
+Meaning
+<ul>
+<li>Why is this important? Why is it worth sharing?</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section >
+<section data-background="#61E8E1">
+<h2>Testing as Team Culture</h2>
+<ul>
+<li>What does testing mean to our team?</li>
+<li>
+We want Quality at Speed
+<ul>
+<li>Replacing the Jet Engine While Still Flying - Jen Simmons</li>
+</ul>
+</li>
+<li>How can we build the team culture of testing?</li>
+</ul>
+</section>
+<section data-background="#F25757">
+<h2>Common Testing Understanding</h2>
+<ul>
+<li>Events like Propeller Heads, Lunch and Learns, Testing Community of Excellence</li>
+<li>Kick-off Testing meetings</li>
+<li>Follow up testing meetings</li>
+<li>Early Testing</li>
+</ul>
+</section>
+<section data-background="#F2E863">
+<h2>What Testing Strategies do your products necessitate?</h2>
+<ul>
+<li>
+Checklists
+<ul>
+<li>Starting place for test ideas</li>
+<li>Explicit and shareable</li>
+<li>Difficult to express some ideas</li>
+</ul>
+</li>
+</ul>
+</section>
+<section data-background="#F2CD60">
+<h3>Mindmaps</h3>
+<img src=images\exploratory_mindmap.jpg>
+</section>
+<section data-background="#EAF2E3">
+<h3>Mindmaps</h3>
+<ul>
+<li>Reference for feature functionality and exploratory sessions</li>
+<li>Not meant to be a system diagram</li>
+<li>Conveys conditions, ideas, and variables in testing</li>
+</ul>
+</section>
+<section data-background="#61E8E1">
+<h2>Craft your testing strategy</h2>
+<ul>
+<li>Expose testing effort required for a release</li>
+<li>Add visibility to impact of "small" fixes and the amount of testing required</li>
+<li>Adapt based on your team and product needs</li>
+<li>Make your process work for you and your team</li>
+</ul>
+</section>
+<section data-background="#F25757">
+<h2>What does the tester do then?</h2>
+<ul>
+<li>Tester serves as the testing evangelist and facilitator</li>
+<li>Utility player ready to jump in and help where needed</li>
+</ul>
+</section>
+<section data-background-image="images/nourish.png">
+</section>
+</section>
+<section data-background="#F2E863">
+<h1>Questions?</h1>
+</section>
+
+
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Add the nohighlight class and data-noescape attribute to code elements that have already been formatted by FSharp.Formatting
+        $('pre.highlighted code').addClass('nohighlight').attr('data-noescape', '');
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
+
